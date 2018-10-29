@@ -1,0 +1,7 @@
+author = Cheatcodek
+version = 0.1
+displayName = Syntation
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
