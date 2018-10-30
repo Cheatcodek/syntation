@@ -29,12 +29,14 @@ namespace Syntation.Items
 			item.value = 10000;
 			item.rare = 6;
             item.useTurn = true;
-			item.UseSound = SoundID.Item1;
+			item.UseSound = SoundID.Item15;
 			item.autoReuse = false;
             item.holdStyle = 3;
             item.mana = 1;
             item.shoot = mod.ProjectileType("DipYeet");
-            item.shootSpeed = 1f;
+            item.shootSpeed = 20f;
+
+
         }
 
 		public override void AddRecipes()
