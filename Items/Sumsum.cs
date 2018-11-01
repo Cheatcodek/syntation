@@ -12,7 +12,7 @@ namespace Syntation.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("The Sumsum Nort 11");
-            Tooltip.SetDefault("A plastic explosive encase within the rotten shell of a phone");
+            Tooltip.SetDefault("A plastic explosive encase within the rotten shell of a phone /n Bought in bulk and launched in bulk");
 
         }
 
@@ -29,7 +29,7 @@ namespace Syntation.Items
             item.knockBack = 1.5f;  
             item.rare = 4;   
             item.shoot = mod.ProjectileType("PSumsum");  
-            item.shootSpeed = 5f; 
+            item.shootSpeed = 8f; 
             item.noUseGraphic = true;
             item.ammo = 0;    
             item.UseSound = SoundID.Item1;
