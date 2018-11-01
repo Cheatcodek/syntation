@@ -1,1 +1,4 @@
-The Test is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+Syntation is a mod for terraria, that has no particular theme yet.
+Like the JoostMod, it is likely I will add whatever comes to mind at the moment.
+
+Code is modified by me, art is by EggyBoi
