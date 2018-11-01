@@ -25,6 +25,7 @@ namespace Syntation.Items
             item.height = 28;   //The size of the height of the hitbox in pixels.
             item.maxStack = 999; //This defines the items max stack
             item.consumable = true;  //Tells the game that this should be used up once fired
+            item.useTime = 20;
             item.knockBack = 1.5f;  
             item.rare = 4;   
             item.shoot = mod.ProjectileType("PSumsum");  

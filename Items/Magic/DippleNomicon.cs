@@ -1,36 +1,40 @@
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Syntation.Items.Magic
 {
-	public class DippleYeet : ModItem
+	public class DippleNomicon : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Dipple's Earthshattering Yeet");
-			Tooltip.SetDefault("A tool for yeeting sent by the gods in order to smite the unworthy");
+			DisplayName.SetDefault("Dipplenomicon");
+			Tooltip.SetDefault("Glory of thy dip sent upon thy enemy");
 
         }
 		public override void SetDefaults()
 		{
-			item.damage = 225;
+			item.damage = 65;
 			item.magic = true;
             item.maxStack = 1;
 			item.width = 64;
 			item.height = 64;
-			item.useTime = 60;
-			item.useAnimation = 60;
+			item.useTime = 20;
+			item.useAnimation = 20;
 			item.useStyle = 5;
-			item.knockBack = 6;
+			item.knockBack = 1;
 			item.value = 10000;
-			item.rare = 6;
-            item.useTurn = true;
+			item.rare = 7;
+            item.useTurn = false;
 			item.UseSound = SoundID.Item15;
 			item.autoReuse = false;
-            item.holdStyle = 3;
-            item.mana = 45;
-            item.shoot = mod.ProjectileType("DipYeet");
-            item.shootSpeed = 20f;
+            item.holdStyle = 1;
+            item.mana = 20;
+            item.shoot = mod.ProjectileType("DipNomicon");
+            item.shootSpeed = 15f;
 
 
         }

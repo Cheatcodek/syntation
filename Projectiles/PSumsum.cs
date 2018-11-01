@@ -27,6 +27,7 @@ namespace Syntation.Projectiles
             Vector2 position = projectile.Center;
             Main.PlaySound(SoundID.Item14, projectile.position);
             int radius = 40;
+            projectile.damage = 45;
             for (int x = -radius; x <= radius; x++)
             {
                 for (int y = -radius; y <= radius; y++)

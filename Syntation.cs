@@ -6,7 +6,7 @@ namespace Syntation
 	{
         public void SetModInfo(out string name, ref ModProperties properties)
         {
-            name = "thetest"; 
+            name = "Syntation"; 
             properties.Autoload = true; 
             properties.AutoloadGores = true; 
             properties.AutoloadSounds = true; 
