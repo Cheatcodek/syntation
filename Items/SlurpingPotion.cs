@@ -31,7 +31,8 @@ namespace Syntation.Items
             item.value = 100;
             item.rare = 1;
             item.potion = true;
-            item.healLife = 30;
+            item.healLife = 120;
+            item.healMana = 120;
 
             return;
         }
