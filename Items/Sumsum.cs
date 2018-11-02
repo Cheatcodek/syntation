@@ -12,14 +12,14 @@ namespace Syntation.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("The Sumsum Nort 11");
-            Tooltip.SetDefault("A plastic explosive encase within the rotten shell of a phone /n Bought in bulk and launched in bulk");
+            Tooltip.SetDefault(" A plastic explosive encase within the rotten shell of a phone \n Bought in bulk and launched in bulk");
 
         }
 
         public override void SetDefaults()
         {
             item.useStyle = 1;
-            item.damage = 55;    //The damage stat for the Weapon.
+            item.damage = 30;    //The damage stat for the Weapon.
             item.noMelee = true; 
             item.width = 14;  //The size of the width of the hitbox in pixels.
             item.height = 28;   //The size of the height of the hitbox in pixels.
@@ -38,9 +38,10 @@ namespace Syntation.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this, 15);
+            recipe.AddIngredient(ItemID.IronBar, 4);
+            recipe.AddIngredient(ItemID.Grenade);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this, 5);
             recipe.AddRecipe();
         }
     }
