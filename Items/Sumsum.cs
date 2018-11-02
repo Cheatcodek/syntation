@@ -38,7 +38,7 @@ namespace Syntation.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.IronBar, 4);
+            recipe.AddRecipeGroup("IronBar", 2);
             recipe.AddIngredient(ItemID.Grenade);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this, 5);
