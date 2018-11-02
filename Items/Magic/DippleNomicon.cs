@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using System.Timers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Syntation.Items.Magic
 {
-	public class DippleNomicon : ModItem
+
+
+    public class DippleNomicon : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -31,8 +34,8 @@ namespace Syntation.Items.Magic
             item.useTurn = false;
 			item.UseSound = SoundID.Item15;
 			item.autoReuse = false;
-            item.holdStyle = 1;
-            item.mana = 20;
+            item.holdStyle = 0;
+            item.mana = 2;
             item.shoot = mod.ProjectileType("DipNomicon");
             item.shootSpeed = 15f;
 
@@ -43,13 +46,15 @@ namespace Syntation.Items.Magic
 
         {
             //wip
-            for (int i = 0; i < 3; i++)
 
-            {
-                Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(12)); //12 is the spread in degrees, although like with Set Spread it's technically a 24 degree spread due to the fact that it's randomly between 12 degrees above and 12 degrees below your cursor.
-                Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI); //create the projectile
-            }
-            return false;
+
+             for (int i = 0; i < 3; i++)
+                 {
+
+                     Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(14)); // multiply the number by 2 to get the real spread
+                     Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI); //create the projectile
+                 }
+        return false;
         }
 
 

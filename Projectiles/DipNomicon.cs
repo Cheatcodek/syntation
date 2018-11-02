@@ -36,6 +36,16 @@ namespace Syntation.Projectiles
 
         }
 
+        public override void Kill(int timeLeft)
+        {
+            Main.PlaySound(SoundID.Item14, projectile.position);
+            int i = 0;
+            while (i < 8)
+            {
+                Dust.NewDust(projectile.position, 22, 22, DustID.Smoke, 0.0f, 0.0f, 120, new Color(120, 20 , 20), 1f);
+                i++;
+            }
+        }
 
     }
 }
