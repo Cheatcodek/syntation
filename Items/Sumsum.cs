@@ -12,7 +12,7 @@ namespace Syntation.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("The Sumsum Nort 11");
-            Tooltip.SetDefault("A plastic explosive encase within the rotten shell of a phone /n Bought in bulk and launched in bulk");
+            Tooltip.SetDefault(" A plastic explosive encase within the rotten shell of a phone \n Bought in bulk and launched in bulk");
 
         }
 
