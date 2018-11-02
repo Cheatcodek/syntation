@@ -5,15 +5,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Syntation.Items
+namespace Syntation.Items.Ranged
 {
     public class DippleArrow : ModItem
     {
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Dipple's Middle Finger");
-            Tooltip.SetDefault("A holy fragment of dipple's power" +
-                "Used to smite your enemies");
+            Tooltip.SetDefault("A holy fragment of dipple's power, Used to smite your enemies");
 
         }
 

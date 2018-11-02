@@ -1,16 +1,12 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Syntation.Items
+namespace Syntation.Items.Magic
 {
 	public class DippleYeet : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-            // WIP
-            // WIP
-            // WIP
-            // DO NOT USE YET
 			DisplayName.SetDefault("Dipple's Earthshattering Yeet");
 			Tooltip.SetDefault("A tool for yeeting sent by the gods in order to smite the unworthy");
 
@@ -32,7 +28,7 @@ namespace Syntation.Items
 			item.UseSound = SoundID.Item15;
 			item.autoReuse = false;
             item.holdStyle = 3;
-            item.mana = 1;
+            item.mana = 45;
             item.shoot = mod.ProjectileType("DipYeet");
             item.shootSpeed = 20f;
 

@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Syntation.Items
+namespace Syntation.Items.Melee
 {
 	public class TheStick : ModItem
 	{
