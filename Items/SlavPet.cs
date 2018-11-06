@@ -10,7 +10,7 @@ namespace Syntation.Items
         {
 
             DisplayName.SetDefault("Vok Da of Comrades");
-            Tooltip.SetDefault("Summons the glory of slavic brethren");
+            Tooltip.SetDefault("Summons the glory of slavic brethren \n He is with you always");
         }
 
         public override void SetDefaults()
