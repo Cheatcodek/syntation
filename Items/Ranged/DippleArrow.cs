@@ -18,7 +18,7 @@ namespace Syntation.Items.Ranged
 
         public override void SetDefaults()
         {
-            item.damage = 25;    //The damage stat for the Weapon.
+            item.damage = 20;    //The damage stat for the Weapon.
             item.ranged = true;  //This defines if it does Ranged damage and if its effected by Ranged increasing Armor/Accessories.
             item.width = 30;  //The size of the width of the hitbox in pixels.
             item.height = 10;   //The size of the height of the hitbox in pixels.
@@ -34,8 +34,16 @@ namespace Syntation.Items.Ranged
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock);
-            recipe.AddTile(TileID.WorkBenches);
+            recipe.AddIngredient(ItemID.HellstoneBar, 2);
+            recipe.AddIngredient(ItemID.TissueSample, 2);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this, 15);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.HellstoneBar, 2);
+            recipe.AddIngredient(ItemID.ShadowScale);
+            recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this, 15);
             recipe.AddRecipe();
         }

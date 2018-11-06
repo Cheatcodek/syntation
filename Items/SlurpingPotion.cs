@@ -31,8 +31,8 @@ namespace Syntation.Items
             item.value = 100;
             item.rare = 1;
             item.potion = true;
-            item.healLife = 120;
-            item.healMana = 120;
+            item.healLife = 130;
+            item.healMana = 130;
 
             return;
         }
@@ -40,10 +40,21 @@ namespace Syntation.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this, 15);
+            recipe.AddIngredient(ItemID.GreaterHealingPotion, 2);
+            recipe.AddIngredient(ItemID.FallenStar, 2);
+            recipe.AddIngredient(ItemID.Bottle);
+            recipe.AddTile(13);
+            recipe.SetResult(this);
             recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.GreaterHealingPotion, 2);
+            recipe.AddIngredient(ItemID.FallenStar, 2);
+            recipe.AddIngredient(ItemID.Bottle);
+            recipe.AddTile(355);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
         }
 
     }
