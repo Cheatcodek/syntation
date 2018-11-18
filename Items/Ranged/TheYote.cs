@@ -15,7 +15,7 @@ namespace Syntation.Items.Ranged
 
         public override void SetDefaults()
         {
-            item.damage = 20;
+            item.damage = 24;
             item.ranged = true;
             item.width = 40;
             item.height = 20;
@@ -23,13 +23,13 @@ namespace Syntation.Items.Ranged
             item.useAnimation = 20;
             item.useStyle = 5;
             item.noMelee = true; 
-            item.knockBack = 4;
+            item.knockBack = 6;
             item.value = 10000;
-            item.rare = 2;
+            item.rare = 3;
             item.UseSound = SoundID.Item11;
             item.autoReuse = true;
-            item.shoot = 10; 
-            item.shootSpeed = 16f;
+            item.shoot = 12; 
+            item.shootSpeed = 8f;
             item.useAmmo = AmmoID.Bullet;
         }
 
