@@ -26,7 +26,7 @@ namespace Syntation.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Ale, 8);
-            recipe.AddIngredient(ItemID.DirtBlock, 64);
+            recipe.AddIngredient(ItemID.DirtBlock, 999);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();
