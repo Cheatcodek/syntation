@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace Syntation.Items.Ranged
 {
-    public class TheLesserYote : ModItem
+    public class TheYote : ModItem
     {
         public override void SetStaticDefaults()
         {

@@ -16,5 +16,13 @@ namespace Syntation.Items
 
         }
 
+        public override void SetDefaults()
+        {
+            item.rare = 3;
+            item.maxStack = 999;
+
+        }
+
+
     }
 }
