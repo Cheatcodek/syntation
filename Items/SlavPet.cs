@@ -25,8 +25,8 @@ namespace Syntation.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Ale, 8);
             recipe.AddIngredient(ItemID.DirtBlock, 999);
-            recipe.AddIngredient(ItemID.Ale, 10);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();
