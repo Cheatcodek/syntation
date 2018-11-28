@@ -15,7 +15,9 @@ namespace Syntation.NPCs
 
         public override void SetStaticDefaults()
         {
+
             Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.FlyingFish];
+
         }
 
         public override void SetDefaults()
@@ -29,12 +31,12 @@ namespace Syntation.NPCs
             npc.friendly = false;
             npc.dontTakeDamageFromHostiles = true;
             animationType = NPCID.FlyingFish;
-            NPCID.Sets.ExtraFramesCount[npc.type] = 0;
-            NPCID.Sets.AttackFrameCount[npc.type] = 0;
+            Main.npcFrameCount[npc.type] = 4;
+
         }
 
-
         public override void NPCLoot()
+
         {
             Item.NewItem(npc.getRect(), mod.ItemType("OfFabled"));
         }
