@@ -11,13 +11,11 @@ namespace Syntation.NPCs
   
     public class Mindscrew : ModNPC
     {
-
+        Random random = new Random();
 
         public override void SetStaticDefaults()
         {
-
             Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.FlyingFish];
-
         }
 
         public override void SetDefaults()
@@ -31,14 +29,29 @@ namespace Syntation.NPCs
             npc.friendly = false;
             npc.dontTakeDamageFromHostiles = true;
             animationType = NPCID.FlyingFish;
-            Main.npcFrameCount[npc.type] = 4;
+            NPCID.Sets.ExtraFramesCount[npc.type] = 0;
+            NPCID.Sets.AttackFrameCount[npc.type] = 0;
+        }
 
+        public override float SpawnChance(NPCSpawnInfo spawnInfo)
+        {
+            if (Main.hardMode)
+            {
+
+                return SpawnCondition.OverworldNightMonster.Chance * 0.06f;
+            }
+            else
+            {
+                return 0f;
+            }
         }
 
         public override void NPCLoot()
-
         {
-            Item.NewItem(npc.getRect(), mod.ItemType("OfFabled"));
+            for (int i = 0; i < random.Next(0,3); i++)
+            {
+                Item.NewItem(npc.getRect(), mod.ItemType("OfFabled"));
+            }
         }
 
     }

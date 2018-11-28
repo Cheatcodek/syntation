@@ -15,14 +15,12 @@ namespace Syntation.Items
             Tooltip.SetDefault("A material found only in bizarre places \nSome say it can make untold amounts of glorious weaponry \nOthers know it is a volatile and strange material");
 
         }
-
         public override void SetDefaults()
         {
             item.rare = 3;
             item.maxStack = 999;
 
         }
-
 
     }
 }
