@@ -10,7 +10,7 @@ namespace Syntation.Items
         {
 
             DisplayName.SetDefault("Vok Da of Comrades");
-            Tooltip.SetDefault("Summons the glory of slavic brethren \n He is with you always");
+            Tooltip.SetDefault("Summons the glory of slavic brethren");
         }
 
         public override void SetDefaults()
@@ -25,7 +25,8 @@ namespace Syntation.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock);
+            recipe.AddIngredient(ItemID.Ale, 8);
+            recipe.AddIngredient(ItemID.DirtBlock, 999);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();
